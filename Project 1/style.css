@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#3b1077, #89afc9);
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.347);
+}
+
+nav .logo {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 6px 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 20px;
+    z-index: 12;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fff;
+    color: #3b1077;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to top, #16082b,transparent);
+    z-index: 100;
+}
+
+
+section img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* pointer-events: none; */
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+    z-index: -2;
+}
+
+#stars{
+    z-index: -3;
+}
+
+#mountains_behind {
+    z-index: -1;
+}
+
+
+.text {
+    z-index: 0;
+    right: -350px;
+    position: absolute;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 100px;
+    overflow: hidden;
+}
+
+
+.btn {
+    z-index: 11;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: large;
+    text-decoration: none;
+    color: #3b1077;
+    background-color: #fff;
+    transform: translateY(200px);
+}
+
+.sec{
+    position: relative;
+    padding: 70px;
+    background: #16082b;
+    color: #fff;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px; 
+}
+
+.sec p{
+    font-size: 1em;
+    margin-bottom: 10px; 
+}
